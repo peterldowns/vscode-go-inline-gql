@@ -1,10 +1,14 @@
-# vscode-go-inline-sql
-Syntax highlighting for inline sql in go.
+# vscode-go-inline-gql
+Syntax highlighting for inline gql in go.
 
-Raw string literals that start with `--sql\n` will be highlighted as sql.
+Raw string literals that start with `#gql\n` will be highlighted as gql.
 
 ```go
-sql := `--sql
-	SELECT * FROM users;
+gql := `#gql
+query {
+  user {
+    login
+  }
+}
 `
 ```

@@ -1,17 +1,17 @@
 {
-  "name": "vscode-go-inline-sql",
-  "displayName": "Inline SQL for go",
+  "name": "vscode-go-inline-gql",
+  "displayName": "Inline Graphql for go",
   "icon": "images/logo.png",
-  "description": "Syntax highlighting for inline sql in go",
+  "description": "Syntax highlighting for inline graphql in go",
   "version": "0.1.2",
   "license": "MIT",
-  "publisher": "jhnj",
+  "publisher": "peterldowns",
   "engines": {
     "vscode": "^1.53.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jhnj/vscode-go-inline-sql.git"
+    "url": "https://github.com/peterldowns/vscode-go-inline-gql.git"
   },
   "categories": [
     "Programming Languages"
@@ -19,13 +19,13 @@
   "contributes": {
     "grammars": [
       {
-        "path": "./syntaxes/go-sql.json",
-        "scopeName": "sql-string.injection",
+        "path": "./syntaxes/go-gql.json",
+        "scopeName": "graphql-string.injection",
         "injectTo": [
           "source.go"
         ],
         "embeddedLanguages": {
-          "meta.embedded.block.sql": "sql"
+          "meta.embedded.block.sql": "graphql"
         }
       }
     ]

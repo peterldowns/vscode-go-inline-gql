@@ -3,8 +3,8 @@
   "injectionSelector": "L:source -comment -string",
   "patterns": [
     {
-      "name": "meta.embedded.block.sql",
-      "begin": "(`)(--sql)\n",
+      "name": "meta.embedded.block.graphql",
+      "begin": "(`)(#gql)\n",
       "beginCaptures": {
         "1": {
           "name": "punctuation.definition.string.begin.go"
@@ -21,10 +21,10 @@
       },
       "patterns": [
         {
-          "include": "source.sql"
+          "include": "source.graphql"
         }
       ]
     }
   ],
-  "scopeName": "sql-string.injection"
+  "scopeName": "graphql-string.injection"
 }
